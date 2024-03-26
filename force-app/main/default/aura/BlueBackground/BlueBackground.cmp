@@ -1,0 +1,12 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	  <aura:attribute name="recordId" type="String" />
+    
+    <div class="custom-compact-layout" style="background-color: blue;">
+ 
+        <!-- Include the standard compact layout -->
+        <force:recordData recordId="{!v.recordId}"
+                          layoutType="COMPACT"
+                          targetFields="{!v.simpleRecord}"/>
+
+    </div>
+</aura:component>

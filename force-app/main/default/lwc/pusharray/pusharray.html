@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="TO-DO LIST">
+        <lightning-input label="enter the value" onchange={valuechange} value={inputvalue}></lightning-input>
+        <lightning-button label="ENTER" variant="brand" onclick={buttonclick}></lightning-button>
+        <lightning-button label="CLEAR" variant="destruction" onclick={clearclick}></lightning-button>
+        <template if:true={valuepush}>
+               <template for:each={valuepush} for:item="values">
+                <div key={values}>
+                    {values}
+                </div>
+               </template>
+        </template>
+    </lightning-card>
+</template>

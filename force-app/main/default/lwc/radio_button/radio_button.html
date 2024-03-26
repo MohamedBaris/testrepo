@@ -1,0 +1,53 @@
+<template>
+    <lightning-card>
+        <lightning-radio-group name="radioGroup"
+                          label="Searcg Category"
+                          options={options}
+                          value={value}
+                          type="radio"></lightning-radio-group>
+
+                          <lightning-input label="Search Products Here" onchange={productchange}></lightning-input>
+
+                          
+   
+    
+        <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-m-top_small">
+            <thead>
+                <tr class="slds-line-height_reset">
+                    <th class="" scope="col">
+                        <div class="slds-truncate">Product Code</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate">Product Name</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate">Brand</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate">MRP</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate">In Stock</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate">Action</div>
+                    </th>
+                </tr>
+            </thead>
+                </table>
+
+                
+                <template if:true={productlist}>
+                 <template for:each={productlist} for:item="product">
+                    <div key={product.Id}>
+
+                        </div>
+                 </template>
+                </template>
+                <lightning-datatable
+                key-field="id"
+                data={productlist}
+                columns={columns}>
+        </lightning-datatable>
+            </lightning-card>
+</template>

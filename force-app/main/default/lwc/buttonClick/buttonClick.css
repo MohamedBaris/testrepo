@@ -1,0 +1,15 @@
+.defaultstyle{
+ color:black;
+ font-size:30px;
+ font-style: italic;
+}
+.redstyle{
+    color:red;
+    font-size:30px;
+    font-style: italic;
+}
+.bluestyle{
+    color: blue;
+    font-size:30px;
+    font-style: italic;
+}

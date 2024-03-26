@@ -1,0 +1,23 @@
+<template>
+  <lightning-card>
+    <lightning-input label="stock value" name="stockinput" onchange={stockchange}></lightning-input>
+    <lightning-button label="submit" name="btn" onclick={eventhandler}></lightning-button>
+    <lightning-button label="clear" name="btn-clear" onclick={clearhandler}></lightning-button>
+     
+  <template if:true={visible}>
+      <div class="slds-border_top">
+            PRODUCT NAME: {productname}<br/>
+          </div>
+       <div class="slds-border_top">
+            PRODUCT PRICE: {productprice}<br/>
+          </div>
+         <div class="slds-border_top">
+            PRODUCT STOCK: {productstock}<br/>
+          </div>
+        </template>
+        <template if:false={visible}>
+          {clearvisible}
+        </template>
+          
+  </lightning-card>  
+</template>

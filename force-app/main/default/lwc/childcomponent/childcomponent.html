@@ -1,0 +1,13 @@
+<template>
+<lightning-card title="This is child component">
+
+ <lightning-button label="to show child" onclick={childhandler}></lightning-button>
+ <h1>{msg}</h1>
+
+ <template if:true={visible}>
+      <c-parencomponenet onclose={okclose}></c-parencomponenet>
+    </template>
+ 
+</lightning-card>
+   
+</template>

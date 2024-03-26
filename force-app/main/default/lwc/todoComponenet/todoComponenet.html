@@ -1,0 +1,22 @@
+<template>
+    <lightning-card> 
+        <template for:each={todolist}  for:item="todo">
+            <div key={todo.id}>
+                <ul>
+                  <li>{todo.task}</li>  
+                </ul>      
+            </div>
+        </template>   
+        <lightning-modal-footer>
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_9-of-12">
+            <lightning-input name="todoinput" placeholder="Enter a task" onchange={todochange}></lightning-input> 
+            </div>   
+            <div class="slds-col slds-size_3-of-12">         
+            <lightning-button class="slds-button slds-m-left_x-small" variant="brand" label="ADD" onclick={eventhandler}></lightning-button>
+        </div> 
+            </div>
+        </lightning-modal-footer>
+    </lightning-card>
+    
+</template>

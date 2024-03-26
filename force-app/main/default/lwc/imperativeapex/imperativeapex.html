@@ -1,0 +1,16 @@
+<template>
+    <lightning-card>
+        <lightning-button variant="success" label="show rec" onclick={changeHandle}></lightning-button>
+        <lightning-button variant="destructive" label="erase rec" type="reset" onclick={changeHandle1}></lightning-button>
+        <template if:true={acc}>
+            <template if:true={showdata}>
+            <template for:each={acc} for:item="accs">
+                <div key={accs.Id}>
+                    <p class="a"><strong>Name</strong>{accs.Name}</p>
+                    <p class="a"><strong>Industry</strong>{accs.Industry}</p>
+                </div>
+            </template>
+            </template>
+        </template>
+    </lightning-card>
+</template>

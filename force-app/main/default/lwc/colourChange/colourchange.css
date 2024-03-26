@@ -1,0 +1,12 @@
+.redcolor{
+    color: red;
+    font-style: italic;
+}
+.bluecolor{
+    color:blue;
+    font-family: fantasy;
+}
+.greencolor{
+    color: green;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

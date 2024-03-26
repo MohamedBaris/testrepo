@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="welcome Message">
+       <div class="hello">
+        <template if:true={check}>
+             click to see admin full name
+        </template>
+        <template if:false={check}>
+            MOHAMED BARIS
+        </template>
+       </div>
+        <lightning-button name="btn" label="Click me!!" onclick={eventheandler}></lightning-button>
+    </lightning-card>
+    
+</template>

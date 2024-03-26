@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title='TO CHANGE PASSWORD'>        
+      <lightning-input name='Currentpassword' label='Current password' onchange={currentpasswordchange} ></lightning-input>
+      <lightning-input name='Confirmpassword' label='Confirm password' onchange={confirmpasswordchange} ></lightning-input>
+      <lightning-button name="btn-password" label="Confirm" onclick={passwordclick}></lightning-button>
+
+
+    
+    <template if:true={visibleadmin}>
+      <p>THE PASSWORD IS CORRECT</p>
+    </template>
+    <template if:true={notvisibleadmin}>
+      <p>THE ENTER PASSWORD IS INCORRECT</p>
+    </template>
+  </lightning-card> 
+</template>

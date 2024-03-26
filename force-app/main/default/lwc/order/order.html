@@ -1,0 +1,11 @@
+<template>
+    <lightning-card>
+    <lightning-record-form
+        object-api-name={orderobject}
+        fields={myfields}
+        onsuccess={handleAccountCreated}>
+    </lightning-record-form>
+    <lightning-button label="ADD PRODUCT" variant="brand"></lightning-button>
+    {create}
+</lightning-card>
+</template>

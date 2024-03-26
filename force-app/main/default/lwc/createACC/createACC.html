@@ -1,0 +1,18 @@
+<template>
+    <lightning-card>
+       <lightning-record-edit-form object-api-name="Account"
+       onsuccess={successhandler}
+       onsubmit={submithandler}
+       onerror={errorhandler}>
+         <lightning-input-field field-name="Name"></lightning-input-field>
+         <lightning-input-field field-name="Industry"></lightning-input-field>
+         <lightning-input-field field-name="AnnualRevenue" class="revenue"></lightning-input-field>
+         <div class="slds-var-m-top_medium">
+            <lightning-button label="create" type="submit" variant="brand"></lightning-button>
+            <lightning-button label="clear" type="reset" variant="brand"></lightning-button>
+            </div>
+       </lightning-record-edit-form>
+    </lightning-card>
+
+    
+</template>

@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="CALCULATOR">
+        <lightning-input label="input 1" name="firtsvalue" onchange={firstchange}></lightning-input>
+        <lightning-input label="input 2" name="secondvalue" onchange={secondchange}></lightning-input>
+        <lightning-button label="ADD" name="btn-add" onclick={addvalue}></lightning-button>
+        <lightning-button label="SUB"  name="btn-sub" onclick={addvalue}></lightning-button>
+        <lightning-button label="MUL"  name="btn-mul" onclick={addvalue}></lightning-button>
+        <lightning-button label="DIV"   name="btn-div" onclick={addvalue}></lightning-button>
+        <lightning-button label="CLR"   name="btn-clr" onclick={addvalue}></lightning-button><br/>
+        the Value is:{result}
+    </lightning-card>
+
+    
+</template>

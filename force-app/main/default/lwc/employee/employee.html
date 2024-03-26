@@ -1,0 +1,17 @@
+<template>
+    <lightning-card>
+        <lightning-input label="emp salary" name="salary" onchange={salarychange}></lightning-input><br/>
+        <lightning-button label="click me!" name="btn" onclick={eventhandler}></lightning-button>
+        <lightning-button label="Clear" name="btn-clear" onclick={clearhandler}></lightning-button>
+        <template for:each={arr} for:item="emp">
+            <div key={emp.name}>
+                <div class="slds-box slds-theme_shade slds-theme_alert-texture">
+              employee name: {emp.name}<br/>
+            employee salary: {emp.salary}<br/>
+          employee position: {emp.position}
+        </div>
+            </div>
+        </template>        
+   </lightning-card>
+    
+</template>
